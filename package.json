@@ -1,11 +1,12 @@
 {
-  "name": "infleux-laboratory",
+  "name": "infleux-nextjs-tracker-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 2999",
+    "prod": "next build && next start -p 2999",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 2999",
     "lint": "next lint"
   },
   "dependencies": {
