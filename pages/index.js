@@ -34,7 +34,7 @@ export default function Home({ staticProps }) {
         src="https://cdn.infleux.io/infleux-tracker/scripts/tracker-web.js"
         onLoad={() => {
           window.InfleuxTracker &&
-            window.InfleuxTracker.init("ee8d1d1b-1784-4ac5-ac01-52d35d77a6c2");
+            window.InfleuxTracker.init("uuid-que-geramos");
           setInfleuxTrackerObject(window.InfleuxTracker);
         }}
       />
@@ -54,7 +54,7 @@ export default function Home({ staticProps }) {
           className={styles.button}
           onClick={() =>
             reportPageViewManually({
-              page: "http://localhost:2999/simulacao-iniciada",
+              page: "http://localhost:2999/conversao-gerada",
             })
           }
         >
